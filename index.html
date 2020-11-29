@@ -9,36 +9,40 @@
   </head>
   <body>
     <div class="container">
-      <h3>make your appointment for the <id="thrill">thrillride</id> here</h3>
-      <div class="appointmentForm">
-        <form id="name">
+      <h3>make your appointment for the <span id="thrill">thrillride</id></span> here</h3>
+        <form id="appointment">
           <div class="form-group">
             <label for="name">name:</label>
             <input id="name" class="form-control" type="text">
           </div>
           <div class="form-group">
             <label for="description">appt description:</label>
-            <input id="description" class="form-control" type="text">
+            <select class="form-control" id="description">
+              <option hidden disabled selected value> - - select an option - - </option>
+              <option>tiny thrill</option>
+              <option>decent sized thrill</option>
+              <option>big thrill</option>
+              <option>epic thrill</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="date">appt date:</label>
-            <input id="date" class="form-control" type="text">
+            <input id="date" class="form-control" type="date">
           </div>
           <div class="form-group">
             <label for="startTime">appt start time:</label>
-            <input id="startTime" class="form-control" type="text">
+            <input id="startTime" class="form-control" type="time" value="10:00:00">
           </div>
           <div class="form-group">
             <label for="endTime">appt end time:</label>
-            <input id="endTime" class="form-control" type="text">
+            <input id="endTime" class="form-control" type="time" value="22:00:00">
           </div>
           <button type="submit" class="btn">Submit</button>
         </form>
-    </div>
 
     <div id="confirmation"
       <p> your appointment for <span class="date"></span> @ <span class="startTime"></span> has been confirmed. 
-        get ready for the ride of a lifetime.</p>
+        get ready for the thrill of a lifetime.</p>
     </div>
   </body>
 </html>

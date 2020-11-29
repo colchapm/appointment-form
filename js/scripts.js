@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  $(".appointmentForm").submit(function(event) {
+  $("#appointment").submit(function(event) {
     event.preventDefault();
     const nameInput = $("input#name").val();
-    const descriptionInput = $("input#description").val();
+    const description = $("#description").val();
     const dateInput= $("input#date").val();
     const startTimeInput = $("input#startTime").val();
     const endTimeInput = $("input#endTime").val();
 
     $(".name").text(nameInput);
-    $(".description").text(descriptionInput);
+    $(".description").text(description);
     $(".date").text(dateInput);
     $(".startTime").text(startTimeInput);
     $(".endTime").text(endTimeInput);
